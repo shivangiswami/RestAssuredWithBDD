@@ -1,0 +1,541 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-30T16:53:24.337Z",
+        "line": 12,
+        "name": "Verify if place is successfully added using Addplace API",
+        "description": "",
+        "id": "validating-place-api;verify-if-place-is-successfully-added-using-addplace-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2451000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Add place payload with \"Shivangi\" \"Hindi\" \"Sarla Roses\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Shivangi\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"Hindi\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"Sarla Roses\"",
+                  "offset": 42
+                }
+              ],
+              "location": "stepDefinations.StepDefinationGoogleApi.add_place_payload_with(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3312000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User call \"addPlaceApi\" API using \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"addPlaceApi\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinations.StepDefinationGoogleApi.user_call_API_using_post_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Api call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 37
+                }
+              ],
+              "location": "stepDefinations.StepDefinationGoogleApi.api_call_is_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1931000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinations.StepDefinationGoogleApi.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"scope\" in response body is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"scope\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinations.StepDefinationGoogleApi.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1680000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "verify place_Id created maps to \"Shivangi\" using \"getPlaceApi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Shivangi\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"getPlaceApi\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepDefinations.StepDefinationGoogleApi.verify_place_Id_created_maps_to_using(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-30T16:53:33.910Z",
+        "line": 13,
+        "name": "Verify if place is successfully added using Addplace API",
+        "description": "",
+        "id": "validating-place-api;verify-if-place-is-successfully-added-using-addplace-api;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Add place payload with \"Ashish\" \"English\" \"Sarla roses another room\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ashish\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"English\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"Sarla roses another room\"",
+                  "offset": 42
+                }
+              ],
+              "location": "stepDefinations.StepDefinationGoogleApi.add_place_payload_with(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 132000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User call \"addPlaceApi\" API using \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"addPlaceApi\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinations.StepDefinationGoogleApi.user_call_API_using_post_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Api call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 37
+                }
+              ],
+              "location": "stepDefinations.StepDefinationGoogleApi.api_call_is_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 41000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinations.StepDefinationGoogleApi.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 98000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"scope\" in response body is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"scope\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinations.StepDefinationGoogleApi.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1525000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "verify place_Id created maps to \"Ashish\" using \"getPlaceApi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ashish\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"getPlaceApi\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepDefinations.StepDefinationGoogleApi.verify_place_Id_created_maps_to_using(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-30T16:53:35.723Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.findPlaceId()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Verify if delete place API is working",
+        "description": "",
+        "id": "validating-place-api;verify-if-delete-place-api-is-working",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "delete payload is available",
+            "match": {
+              "location": "stepDefinations.StepDefinationGoogleApi.delete_payload_is_available()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1758000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User call \"deletePlaceApi\" API using \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"deletePlaceApi\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 37
+                }
+              ],
+              "location": "stepDefinations.StepDefinationGoogleApi.user_call_API_using_post_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Api call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 37
+                }
+              ],
+              "location": "stepDefinations.StepDefinationGoogleApi.api_call_is_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DeletePlace"
+          }
+        ]
+      }
+    ],
+    "name": "Validating place Api",
+    "description": "",
+    "id": "validating-place-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/PlaceValidations.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-30T16:53:37.488Z",
+        "line": 2,
+        "name": "Home page default login",
+        "description": "",
+        "id": "application-login;home-page-default-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is on Netbanking landing page",
+            "match": {
+              "location": "stepDefinations.stepDefination.user_is_on_netbanking_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User login into application with username \"jin\" and password \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jin",
+                  "offset": 43
+                },
+                {
+                  "val": "1234",
+                  "offset": 62
+                }
+              ],
+              "location": "stepDefinations.stepDefination.user_login_into_application_with_username_something_and_password_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Home page is populated",
+            "match": {
+              "location": "stepDefinations.stepDefination.home_page_is_populated()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Cards displayed are \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "true",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefinations.stepDefination.cards_displayed_are_something(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-30T16:53:37.496Z",
+        "line": 8,
+        "name": "Home page failed login",
+        "description": "",
+        "id": "application-login;home-page-failed-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is on Netbanking landing page",
+            "match": {
+              "location": "stepDefinations.stepDefination.user_is_on_netbanking_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User login into application with username \"john\" and password \"4321\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "john",
+                  "offset": 43
+                },
+                {
+                  "val": "4321",
+                  "offset": 63
+                }
+              ],
+              "location": "stepDefinations.stepDefination.user_login_into_application_with_username_something_and_password_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Home page is populated",
+            "match": {
+              "location": "stepDefinations.stepDefination.home_page_is_populated()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Cards displayed are \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "false",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefinations.stepDefination.cards_displayed_are_something(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Application Login",
+    "description": "",
+    "id": "application-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/login.feature",
+    "tags": []
+  }
+]
